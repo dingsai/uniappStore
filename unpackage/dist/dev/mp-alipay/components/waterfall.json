@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-button": "../vant-aliapp/dist/dist/button/index",
+    "van-field": "../vant-aliapp/dist/dist/field/index",
+    "van-search": "../vant-aliapp/dist/dist/search/index",
+    "van-grid": "../vant-aliapp/dist/dist/grid/index",
+    "van-grid-item": "../vant-aliapp/dist/dist/grid-item/index"
+  }
+}

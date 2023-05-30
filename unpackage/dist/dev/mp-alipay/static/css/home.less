@@ -1,0 +1,182 @@
+@import url("../css/common.less");
+.home_top{
+	width: 100%;
+	height: 510rpx;
+	box-sizing: border-box;
+	position: relative;
+	.slider-bg{
+		position: absolute;
+		left:0;
+		top:0;
+		width: 100%;
+		height: 460rpx;
+		background: linear-gradient(0deg,#f1503d,#c82519 50%);
+		background-position: 0% 0%;
+		z-index:-1;
+	}
+	.titleBar{
+		width:100%;
+		text-align: center;
+		color:#fff;
+		z-index: 9;
+		background: linear-gradient(0deg,#f1503d,#c82519 0);
+		background-position: 0% 0%;
+		position: fixed;
+	}
+}
+.top_contain{
+	// margin-top:10rpx;
+	heihgt:400rpx;
+	.search{
+		width: 100%;
+		height:88rpx;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		position: relative;
+		.bars_icon{
+			width:80rpx;
+			height: 88rpx;
+			line-height: 88rpx;
+			text-align: center;
+		}
+		.search_field{
+			flex: 1;
+			height:60rpx;
+			border-radius:20rpx;
+			padding:0 14rpx;
+			.van-cell{
+				height: 60rpx;
+				padding: var(--cell-vertical-padding,8rpx) var(--cell-horizontal-padding,16rpx);
+				border-radius: 40rpx;
+			}
+		}
+		.search_button{
+			padding-right: 14rpx;
+		}
+	}
+	.home_swiper{
+		display: flex;
+		justify-content: center;
+		height: 280rpx;
+		.swiper{
+			width: calc(100% - 50rpx);
+			height:100%;
+			.swiper-item, .swiper-item image{
+				width:100%;
+				height: 100%;
+				display: block;
+				border-radius: 15rpx;
+			}
+		}
+	}
+}
+.main_contain{
+	width: 100%;
+	 .cateList{
+		 .van-grid-item__content{
+			 padding:10rpx 8rpx;
+		 }
+		 image{
+			 width:80rpx;
+			 height: 80rpx;
+		 }
+		 label{
+			 color:#666;
+			 font-size:22rpx;
+			 margin-top:10rpx;
+		 }
+	 }
+	 .commodity_info{
+		 margin-top:20rpx;
+		 width:100%;
+		 .waterfall{
+			display: flex;
+			flex-wrap: wrap;
+			.waterfall_left,.waterfall_right{
+				width:50%;
+				box-sizing: border-box;
+				padding:0 10rpx;
+				.waterfall_list{
+					border-radius:10rpx;
+					background-color: #fff;
+					box-shadow: 0 4rpx 6rpx #ccc;
+					margin-bottom:20rpx;
+					.waterfall_list_img image{
+						width:100%;
+						display: block;
+						border-top-left-radius:10rpx;
+						border-top-right-radius:10rpx;
+					}
+					.msg-box{
+						padding: 0 10rpx 10rpx;
+						.single-omit{
+							font-size: 26rpx;
+							text-align: left;
+							line-height: 40rpx;
+							height: 80rpx;
+							color: #434343;
+							
+							display:-webkit-box;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							-webkit-line-clamp: 2;
+							word-break: break-all;
+							-webkit-box-orient: vertical;
+							
+							.title_icon{
+								display: inline-block;
+								width:88rpx;
+								height: 28rpx;
+								padding-top:8rpx;
+							}
+						}
+						.coupon{
+							border:1px solid @defaultColor;
+							color:@defaultColor;
+							padding:3rpx 10rpx;
+							font-size:26rpx;
+							border-radius: 12rpx;
+							width:fit-content;
+							margin-top:15rpx;
+						}
+						.unit{
+							display: flex;
+							color:@defaultColor;
+							margin-top:10rpx;
+							text{
+								font-size:26rpx;
+								line-height:50rpx;
+								display: inline-block;
+							}
+							.now_price{
+								font-size: 34rpx;
+							}
+							.price_icon{
+								display: inline-block;
+								width:60rpx;
+								height: 20rpx;
+								margin:15rpx 10rpx;
+							}
+							.originPrice{
+								color:#999;
+								font-size:26rpx;
+								line-height:50rpx;
+								text-decoration: line-through;
+							}
+						}
+						.comment {
+							line-height: 1;
+							text-align: right;
+							text{
+								color:#999;
+								margin-top:10rpx;
+								font-size: 24rpx;
+							}
+						}
+					}
+				}
+			}
+		 }
+	 }
+}

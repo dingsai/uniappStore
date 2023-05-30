@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/cate/cate",
+    "pages/cart/cart",
+    "pages/my/my"
+  ],
+  "usingComponents": {
+    "van-button": "/vant-aliapp/dist/dist/button/index",
+    "van-field": "/vant-aliapp/dist/dist/field/index",
+    "van-search": "/vant-aliapp/dist/dist/search/index",
+    "van-grid": "/vant-aliapp/dist/dist/grid/index",
+    "van-grid-item": "/vant-aliapp/dist/dist/grid-item/index"
+  },
+  "window": {
+    "defaultTitle": "uni-app",
+    "titleBarColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "textColor": "#bfbfbf",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/home/home",
+        "name": "首页",
+        "icon": "static/images/home_bg_normal.png",
+        "activeIcon": "static/images/home_bg_active.png"
+      },
+      {
+        "pagePath": "pages/cate/cate",
+        "name": "分类",
+        "icon": "static/images/cate_bg_normal.png",
+        "activeIcon": "static/images/cate_bg_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "name": "购物车",
+        "icon": "static/images/cart_bg_normal.png",
+        "activeIcon": "static/images/cart_bg_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "name": "我的",
+        "icon": "static/images/my_bg_normal.png",
+        "activeIcon": "static/images/my_bg_active.png"
+      }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "subPackageBuildType": "shared"
+}
