@@ -1,32 +1,37 @@
 .home_top {
   width: 100%;
-  height: 510rpx;
   box-sizing: border-box;
-  position: relative;
-}
-.home_top .slider-bg {
-  position: absolute;
-  left: 0;
+  position: fixed;
   top: 0;
-  width: 100%;
-  height: 460rpx;
-  background: linear-gradient(0deg, #f1503d, #c82519 50%);
+  left: 0;
+  background: linear-gradient(0deg, #f1503d, #c82519 0);
   background-position: 0% 0%;
-  z-index: -1;
+  z-index: 9;
 }
 .home_top .titleBar {
   width: 100%;
   text-align: center;
   color: #fff;
-  z-index: 9;
-  background: linear-gradient(0deg, #f1503d, #c82519 0);
+  position: absolute;
+}
+.main_contain {
+  position: absolute;
+}
+.main_contain .top_contain {
+  heihgt: 420rpx;
+  position: relative;
+}
+.main_contain .top_contain .slider-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 350rpx;
+  background: linear-gradient(0deg, #f1503d, #c82519 50%);
   background-position: 0% 0%;
-  position: fixed;
+  z-index: -1;
 }
-.top_contain {
-  heihgt: 400rpx;
-}
-.top_contain .search {
+.main_contain .top_contain .search {
   width: 100%;
   height: 88rpx;
   display: flex;
@@ -34,44 +39,45 @@
   box-sizing: border-box;
   position: relative;
 }
-.top_contain .search .bars_icon {
+.main_contain .top_contain .search .bars_icon {
   width: 80rpx;
   height: 88rpx;
   line-height: 88rpx;
   text-align: center;
 }
-.top_contain .search .search_field {
+.main_contain .top_contain .search .search_field {
   flex: 1;
   height: 60rpx;
   border-radius: 20rpx;
   padding: 0 14rpx;
 }
-.top_contain .search .search_field .van-cell {
+.main_contain .top_contain .search .search_field .van-cell {
   height: 60rpx;
   padding: var(--cell-vertical-padding, 8rpx) var(--cell-horizontal-padding, 16rpx);
   border-radius: 40rpx;
 }
-.top_contain .search .search_button {
+.main_contain .top_contain .search .search_button {
   padding-right: 14rpx;
 }
-.top_contain .home_swiper {
+.main_contain .top_contain .home_swiper {
   display: flex;
   justify-content: center;
   height: 280rpx;
 }
-.top_contain .home_swiper .swiper {
+.main_contain .top_contain .home_swiper .swiper {
   width: calc(100% - 50rpx);
   height: 100%;
+  border-radius: 15rpx;
+  overflow: hidden;
 }
-.top_contain .home_swiper .swiper .swiper-item,
-.top_contain .home_swiper .swiper .swiper-item image {
+.main_contain .top_contain .home_swiper .swiper .swiper-item,
+.main_contain .top_contain .home_swiper .swiper .swiper-item image {
   width: 100%;
   height: 100%;
   display: block;
-  border-radius: 15rpx;
 }
-.main_contain {
-  width: 100%;
+.main_contain .commodity_cate {
+  margin-top: 20rpx;
 }
 .main_contain .cateList .van-grid-item__content {
   padding: 10rpx 8rpx;

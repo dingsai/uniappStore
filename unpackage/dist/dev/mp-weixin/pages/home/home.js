@@ -70,37 +70,49 @@ const _sfc_main = {
       titleBar.top = common_vendor.wx$1.getMenuButtonBoundingClientRect().top;
       titleBar.height = common_vendor.wx$1.getMenuButtonBoundingClientRect().height;
       containTop.value = titleBar.top + titleBar.height;
-      console.log(containTop);
+    }
+    function toCate() {
+      common_vendor.index.switchTab({
+        url: "/pages/cate/cate"
+      });
+    }
+    function toDetail(index) {
+      common_vendor.index.navigateTo({
+        url: "/pages/home/detail"
+      });
     }
     return (_ctx, _cache) => {
       return {
-        a: common_vendor.unref(top) + "px",
+        a: common_vendor.unref(height) + "px",
         b: common_vendor.unref(height) + "px",
-        c: common_vendor.unref(height) + "px",
-        d: common_vendor.p({
+        c: common_vendor.unref(top) + "px",
+        d: common_vendor.unref(containTop) + "px",
+        e: common_vendor.unref(top) + "px",
+        f: common_vendor.o(toCate),
+        g: common_vendor.p({
           type: "bars",
           size: "26",
           color: "#ffffff"
         }),
-        e: common_vendor.p({
+        h: common_vendor.p({
           value: common_vendor.unref(searchForm).value,
           placeholder: "请输入",
           inputAlign: "left",
           leftIcon: "search",
           clearable: true
         }),
-        f: common_vendor.p({
+        i: common_vendor.p({
           size: "small",
           round: "true"
         }),
-        g: common_vendor.f(common_vendor.unref(swiperList), (item, i, i0) => {
+        j: common_vendor.f(common_vendor.unref(swiperList), (item, i, i0) => {
           return {
             a: item.src,
-            b: i
+            b: i,
+            c: common_vendor.o(($event) => toDetail(), i)
           };
         }),
-        h: common_vendor.unref(containTop) + "px",
-        i: common_vendor.f(common_vendor.unref(cateList), (item, i, i0) => {
+        k: common_vendor.f(common_vendor.unref(cateList), (item, i, i0) => {
           return {
             a: item.src,
             b: common_vendor.t(item.name),
@@ -108,13 +120,14 @@ const _sfc_main = {
             d: "83a43520-5-" + i0 + ",83a43520-4"
           };
         }),
-        j: common_vendor.p({
+        l: common_vendor.p({
           useSlot: true
         }),
-        k: common_vendor.p({
+        m: common_vendor.p({
           columnNum: "5",
           border: false
-        })
+        }),
+        n: common_vendor.unref(containTop) + "px"
       };
     };
   }

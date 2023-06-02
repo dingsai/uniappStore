@@ -22,7 +22,17 @@
   "libVersion": "2.32.0",
   "appid": "wx7c661d15a10cc676",
   "projectname": "uniStore",
-  "condition": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": ""
+        }
+      ]
+    }
+  },
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

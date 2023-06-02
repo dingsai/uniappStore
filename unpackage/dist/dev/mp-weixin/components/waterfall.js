@@ -42,6 +42,15 @@ const _sfc_main = {
           title_icon: "",
           coupon: "",
           comment: 15
+        },
+        {
+          src: "https://img14.360buyimg.com/mobilecms/s360x360_jfs/t1/116447/2/24843/77539/6471b662Fa06b597b/ab3caf615a545744.jpg!q70.dpg.webp",
+          title: "施耐德开关插座面板86型墙面10A斜五孔插座面板 皓呈系列奶油白色 错位五孔单只",
+          now_price: 15.72,
+          originPrice: 29.9,
+          title_icon: "https://img12.360buyimg.com/img/s88x28_jfs/t1/201732/29/26359/1848/62fb657fE53cd4619/710369802b423cd8.png",
+          coupon: "满60减5",
+          comment: 100
         }
       ],
       goodsLeftList: [],

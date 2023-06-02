@@ -11,11 +11,11 @@
             "path" : "pages/home/home",
             "style" :                                                                                    
             {
-                "navigationStyle": "custom"//自定义顶部导航
+                "navigationStyle": "custom",//自定义顶部导航,
+				"enablePullDownRefresh": true
             }
             
-        }
-        ,{
+        },{
             "path" : "pages/cate/cate",
             "style" :                                                                                    
             {
@@ -35,6 +35,15 @@
         }
         ,{
             "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/detail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
